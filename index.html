@@ -4,26 +4,39 @@
     </head>
     <body>
         <script src="script.js"></script>
+        <div class="container">
         <h1>Simple Interest Calculator</h1>
-        <div class="control-row">
+
             <label>
-                Principal:<input type="text" style="width: 175px">
+                Principal $:
+                <input type="text" 
+                style="width: 175px"
+                id="principal"
+                >
             </label>
             <label>
-                Rate:
+                Rate %:
                 <input type="range" 
-                name="rangeInput" 
                 min="0" 
                 max="20" 
                 step="0.5"
-                onchange="updateTextInput(this.value);">
-                <output type="text" id="textInput" value="">
-            </label> 
+                onchange="interestSlider(this.value);">
+                <output type="text" id="interest-range">
+            </label>     
             <label> 
-                Term:<input type="number" style="width: 50px">
+                Term:
+                <input type="number" 
+                style="width: 50px"
+                id="term"
+                >
             </label>
-            <button type="submit">Calculate</button>
-            
+            <button onclick="computeInterest()">Compute Interest</button>
+            <div class="res">
+                <p>Your interest is: <span id="interest"></span>$</p>
+            </div> 
+            <div class="get-rich">
+               <h4> © Everyone can get rich</h4>
+            </div>
         </div>
     </body>
 </html>
