@@ -1,7 +1,7 @@
 .container {
     height: 300px;
     width: 400px;
-    background-color: coral;
+    background-color: white;
     border-radius: 30px;
     margin-top: 50px;
     margin-left: 200px;
@@ -39,7 +39,7 @@ label {
   body {
       width: 400px;
       height: 200px;
-      background-color: beige;
+      background-color: black;
       border-radius: 20px;
   }
 
