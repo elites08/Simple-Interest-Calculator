@@ -1,4 +1,33 @@
-body {background-color:tan;}
-h1{color:green;}
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  
+  input {
+    height: 25px;
+    flex: 0 0 200px;
+    margin-left: 100px;
+    position: fixed;
+  }
+  output {
+    flex: 0 0 255px;
+
+  }
+  button {
+      margin-top: 15px;
+      margin-left: 30px;
+  }
 
 
+  body {
+      width: 400px;
+      height: 200px;
+      background-color: beige;
+      border-radius: 20px;
+  }
