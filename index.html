@@ -7,12 +7,7 @@
         <h1>Simple Interest Calculator</h1>
         <div class="control-row">
             <label>
-                Principal:
-                <input 
-                type="text" 
-                style="width: 175px"
-                id="principal"
-                >
+                Principal:<input type="text" style="width: 175px">
             </label>
             <label>
                 Rate:
@@ -21,17 +16,14 @@
                 min="0" 
                 max="20" 
                 step="0.5"
-                onchange="compute(this.value);">
-                <output type="text" id="rate" value="">
+                onchange="updateTextInput(this.value);">
+                <output type="text" id="textInput" value="">
             </label> 
             <label> 
-                Term:
-                <input type="number" 
-                style="width: 50px"
-                id="term"
-                >
+                Term:<input type="number" style="width: 50px">
             </label>
-            <button type="submit" onclick="compute()">Calculate</button>
+            <button type="submit">Calculate</button>
+            
         </div>
     </body>
 </html>

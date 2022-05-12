@@ -1,13 +1,20 @@
-const compute = (rate, principal, term) =>
+const compute = (principal, rate, term) =>
 {
-    let interest = principal * (rate/100) * term;
-
-    document.getElementById('rate').value = rate; 
     document.getElementById("principal").value = principal;
-
+    document.getElementById('textInput').value = rate; 
     document.getElementById("term").value = term;
-    document.getElementById('interest').innerHTML = interest;
 
-    return interest;
+    let result = principal * (rate/100) * term;
+
+
+
+    return result;
+    
 }
 
+console.log(compute(10000, 2.5, 5));
+
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val; 
+  }
+        
